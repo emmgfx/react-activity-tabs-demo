@@ -22,7 +22,7 @@ export default function Home() {
         <div>
           <Code
             lang="jsx"
-            className="!m-0 text-sm !rounded-2xl"
+            className="m-0! text-sm rounded-2xl!"
             title="basic-styling.jsx"
           >
             {demo1code}
@@ -38,7 +38,7 @@ export default function Home() {
         <div className="bg-slate-900 p-2 rounded-2xl">
           <Code
             lang="jsx"
-            className="!m-0 text-sm "
+            className="m-0! text-sm "
             title="reusable-styles-usage.jsx"
           >
             {demo2code1}
@@ -46,7 +46,7 @@ export default function Home() {
           {/* <div className="h-2" /> */}
           <Code
             lang="jsx"
-            className="!m-0 text-sm "
+            className="m-0! text-sm "
             title="reusable-styles-implementation.jsx"
           >
             {demo2code2}
