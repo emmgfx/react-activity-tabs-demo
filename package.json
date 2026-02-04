@@ -11,19 +11,23 @@
   },
   "dependencies": {
     "bright": "^1.0.0",
-    "next": "^16.0.0-canary.8",
-    "react": "^19.2.0",
-    "react-activity-tabs": "file:../react-activity-tabs/react-activity-tabs-0.0.2.tgz",
-    "react-dom": "^19.2.0"
+    "next": "16.1.6",
+    "react": "19.2.4",
+    "react-activity-tabs": "^0.3.1",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.0",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@biomejs/biome": "2.3.14",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.2.0",
+    "@types/react": "19.2.11",
+    "@types/react-dom": "19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.11",
+    "@types/react-dom": "19.2.3"
   }
 }
