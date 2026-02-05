@@ -1,9 +1,14 @@
+import Link from "next/link";
+
 export const Header = () => {
   return (
     <div>
       <div className="h-8 md:h-16" />
       <div>
-        <div className="flex justify-center text-center items-center capitalize font-semibold text-lg md:text-2xl gap-2">
+        <Link
+          href="/"
+          className="flex mx-auto w-fit justify-center text-center items-center capitalize font-semibold text-lg md:text-2xl gap-2"
+        >
           <span className="bg-slate-300 text-slate-700 rounded-t-2xl px-3 py-1 md:px-6 md:py-2">
             react
           </span>
@@ -15,7 +20,7 @@ export const Header = () => {
           <span className="bg-slate-600 text-slate-100 rounded-t-2xl px-3 py-1 md:px-6 md:py-2">
             tabs
           </span>
-        </div>
+        </Link>
       </div>
       <div className="h-8 md:h-16" />
 
