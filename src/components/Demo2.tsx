@@ -54,7 +54,7 @@ export const TabsPanels = (props) => (
 export const TabsPanel = (props) => (
   <RATabsPanel className="p-4 bg-slate-100 rounded-b-xl" {...props} />
 );
-`;
+`.trim();
 
 export const Demo2 = () => {
   return (
