@@ -1,7 +1,8 @@
-import Link from "next/link";
 import { Code } from "bright";
 
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+
 import { Demo1, demo1code } from "@/components/Demo1";
 import { Demo2, demo2code1, demo2code2 } from "@/components/Demo2";
 
