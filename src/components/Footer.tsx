@@ -4,11 +4,11 @@ export const Footer = () => {
   return (
     <footer>
       <div className="h-16" />
-      <p className="text-center text-slate-700">
+      <p className="text-center text-balance text-slate-700">
         &copy; 2026{" "}
         <Link
           href="https://github.com/emmgfx/react-activity-tabs"
-          className="underline"
+          className="underline text-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -17,7 +17,7 @@ export const Footer = () => {
         . Built by{" "}
         <Link
           href="https://www.viciana.me"
-          className="underline"
+          className="underline text-nowrap"
           target="_blank"
           rel="noopener noreferrer"
         >
