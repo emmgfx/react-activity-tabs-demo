@@ -5,6 +5,14 @@ import { Footer } from "@/components/Footer";
 
 import { Demo1, demo1code } from "@/components/Demo1";
 import { Demo2, demo2code1, demo2code2 } from "@/components/Demo2";
+import {
+  CodeTabs,
+  CodeTabsList,
+  CodeTabsPanel,
+  CodeTabsPanels,
+  CodeTabsTab,
+} from "@/components/CustomTabsCode";
+import { IconTSX } from "@/components/IconTSX";
 
 Code.theme = "github-dark";
 
@@ -12,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="grid grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
         <div>
           <p className="text-lg font-semibold">
             Basic styling with Tailwind classes
@@ -20,53 +28,80 @@ export default function Home() {
           <div className="h-4" />
           <Demo1 />
         </div>
-        <div>
-          <Code
-            lang="jsx"
-            className="m-0! text-sm rounded-2xl!"
-            title="basic-styling.jsx"
-          >
-            {demo1code}
-          </Code>
-        </div>
+        <CodeTabs
+          initialActiveTab="basic-tailwind-styles"
+          className="bg-slate-800 p-0 rounded-lg overflow-hidden"
+        >
+          <CodeTabsList>
+            <CodeTabsTab tabId="basic-tailwind-styles">
+              <div className="flex items-center gap-2">
+                <IconTSX />
+                basic-tailwind-styles.tsx
+              </div>
+            </CodeTabsTab>
+          </CodeTabsList>
+          <CodeTabsPanels>
+            <CodeTabsPanel tabId="basic-tailwind-styles">
+              <Code
+                lang="jsx"
+                className="m-0! rounded-none! text-xs/relaxed *:bg-transparent!"
+              >
+                {demo1code}
+              </Code>
+            </CodeTabsPanel>
+          </CodeTabsPanels>
+        </CodeTabs>
       </div>
 
       <div className="h-8" />
       <div className="h-px bg-slate-200" />
       <div className="h-8" />
 
-      <div className="grid grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div className="bg-slate-900 p-2 rounded-2xl">
-          <Code
-            lang="jsx"
-            className="m-0! text-sm "
-            title="reusable-styles-usage.jsx"
-          >
-            {demo2code1}
-          </Code>
-          {/* <div className="h-2" /> */}
-          <Code
-            lang="jsx"
-            className="m-0! text-sm "
-            title="reusable-styles-implementation.jsx"
-          >
-            {demo2code2}
-          </Code>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <CodeTabs
+          initialActiveTab="usage"
+          className="bg-slate-800 p-0 rounded-lg overflow-hidden max-sm:order-2"
+        >
+          <CodeTabsList>
+            <CodeTabsTab tabId="usage">
+              <div className="flex items-center gap-2">
+                <IconTSX />
+                usage.tsx
+              </div>
+            </CodeTabsTab>
+            <CodeTabsTab tabId="definition">
+              <div className="flex items-center gap-2">
+                <IconTSX />
+                definition.tsx
+              </div>
+            </CodeTabsTab>
+          </CodeTabsList>
+          <CodeTabsPanels>
+            <CodeTabsPanel tabId="usage">
+              <Code
+                lang="jsx"
+                className="m-0! rounded-none! text-xs/relaxed *:bg-transparent!"
+              >
+                {demo2code1}
+              </Code>
+            </CodeTabsPanel>
+            <CodeTabsPanel tabId="definition" className="">
+              <Code
+                lang="jsx"
+                className="m-0! rounded-none! text-xs/relaxed *:bg-transparent!"
+              >
+                {demo2code2}
+              </Code>
+            </CodeTabsPanel>
+          </CodeTabsPanels>
+        </CodeTabs>
         <div>
           <p className="text-lg font-semibold">Reusable custom styles</p>
           <div className="h-4" />
           <Demo2 />
         </div>
       </div>
-      <footer>
-        <div className="h-16" />
-        <p className="text-center text-slate-700">
-          &copy; 2025 react-activity-tabs. Built by{" "}
-          <Link href="https://www.viciana.me">Josep Viciana</Link>
-        </p>
-        <div className="h-16" />
-      </footer>
+      <Footer />
     </div>
   );
 }
