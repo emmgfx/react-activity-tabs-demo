@@ -59,7 +59,7 @@ export default function Home() {
         Reusable custom styles
       </p>
       <div className="h-8" />
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:max-w-5xl mx-auto items-start max-w-md">
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:max-w-5xl mx-auto items-start max-w-md">
         <CodeTabs
           initialActiveTab="usage"
           className="bg-slate-800 p-0 rounded-lg overflow-hidden max-sm:order-2"
