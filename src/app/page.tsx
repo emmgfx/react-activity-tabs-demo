@@ -20,14 +20,12 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div>
-          <p className="text-lg font-semibold">
-            Basic styling with Tailwind classes
-          </p>
-          <div className="h-4" />
-          <Demo1 />
-        </div>
+      <p className="text-lg font-semibold text-center">
+        Basic styling with Tailwind classes
+      </p>
+      <div className="h-8" />
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:max-w-5xl mx-auto items-start max-w-md">
+        <Demo1 />
         <CodeTabs
           initialActiveTab="basic-tailwind-styles"
           className="bg-slate-800 p-0 rounded-lg overflow-hidden"
@@ -57,7 +55,11 @@ export default function Home() {
       <div className="h-px bg-slate-200" />
       <div className="h-8" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <p className="text-lg font-semibold text-center">
+        Reusable custom styles
+      </p>
+      <div className="h-8" />
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:max-w-5xl mx-auto items-start max-w-md">
         <CodeTabs
           initialActiveTab="usage"
           className="bg-slate-800 p-0 rounded-lg overflow-hidden max-sm:order-2"
@@ -95,11 +97,7 @@ export default function Home() {
             </CodeTabsPanel>
           </CodeTabsPanels>
         </CodeTabs>
-        <div>
-          <p className="text-lg font-semibold">Reusable custom styles</p>
-          <div className="h-4" />
-          <Demo2 />
-        </div>
+        <Demo2 />
       </div>
       <Footer />
     </div>
