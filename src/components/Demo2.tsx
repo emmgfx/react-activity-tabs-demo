@@ -26,6 +26,8 @@ export const demo2code1 = `
 `.trim();
 
 export const demo2code2 = `
+// Import and rename the components to avoid confusion with the default ones
+
 import {
   Tabs as RATabs,
   TabsList as RATabsList,
@@ -36,6 +38,8 @@ import {
 
 export const Tabs = (props) => (
   <RATabs className="rounded-2xl overflow-hidden" {...props} />
+// Export your own components, with your own styles
+
 );
 export const TabsList = (props) => (
   <RATabsList className="bg-slate-500 p-1 pb-0" {...props} />

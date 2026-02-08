@@ -1,3 +1,5 @@
+// Import and rename the components to avoid confusion with the default ones
+
 import {
   Tabs as RATabs,
   TabsList as RATabsList,
@@ -5,6 +7,8 @@ import {
   TabsPanels as RATabsPanels,
   TabsPanel as RATabsPanel,
 } from "react-activity-tabs";
+
+// Export your own components, with your own styles
 
 export const Tabs = (props: React.ComponentProps<typeof RATabs>) => (
   <RATabs className="rounded-2xl overflow-hidden" {...props} />
