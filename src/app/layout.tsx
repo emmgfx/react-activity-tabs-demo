@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-slate-50 text-slate-800">
-      <body className={`antialiased p-2`}>{children}</body>
+      <body className={`p-2 antialiased`}>{children}</body>
     </html>
   );
 }

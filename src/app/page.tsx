@@ -31,11 +31,11 @@ export default function Home() {
         Basic styling with Tailwind classes
       </p>
       <div className="h-8" />
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 md:max-w-5xl mx-auto items-start max-w-md">
+      <div className="mx-auto grid max-w-md grid-cols-1 items-start gap-8 md:max-w-5xl md:grid-cols-[2fr_3fr]">
         <Demo1 />
         <CodeTabs
           initialActiveTab="basic-tailwind-styles"
-          className="bg-slate-800 p-0 rounded-lg overflow-hidden"
+          className="overflow-hidden rounded-lg bg-slate-800 p-0"
         >
           <CodeTabsList>
             <CodeTabsTab tabId="basic-tailwind-styles">
@@ -57,19 +57,17 @@ export default function Home() {
           </CodeTabsPanels>
         </CodeTabs>
       </div>
-
       <div className="h-8" />
       <div className="h-px bg-slate-200" />
       <div className="h-8" />
-
-      <p className="text-lg font-semibold text-center">
+      <p className="text-center text-lg font-semibold">
         Reusable custom styles
       </p>
       <div className="h-8" />
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-8 md:max-w-5xl mx-auto items-start max-w-md">
+      <div className="mx-auto grid max-w-md grid-cols-1 items-start gap-8 md:max-w-5xl md:grid-cols-[3fr_2fr]">
         <CodeTabs
           initialActiveTab="usage"
-          className="bg-slate-800 p-0 rounded-lg overflow-hidden max-sm:order-2"
+          className="overflow-hidden rounded-lg bg-slate-800 p-0 max-sm:order-2"
         >
           <CodeTabsList>
             <CodeTabsTab tabId="usage">

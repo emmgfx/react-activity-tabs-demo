@@ -9,19 +9,21 @@ import {
 export const CodeTabs = (props: React.ComponentProps<typeof RATabs>) => (
   <RATabs className="" {...props} />
 );
+
 export const CodeTabsList = (
   props: React.ComponentProps<typeof RATabsList>,
 ) => (
-  <RATabsList className="bg-slate-700 border-b border-slate-600" {...props} />
+  <RATabsList className="border-b border-slate-600 bg-slate-700" {...props} />
 );
 
 export const CodeTabsTab = (props: React.ComponentProps<typeof RATabsTab>) => (
   <RATabsTab
-    className="bg-slate-700 text-slate-100 text-xs px-4 py-2"
+    className="bg-slate-700 px-4 py-2 text-xs text-slate-100"
     activeClassName="bg-slate-800 text-slate-100 text-xs px-4 py-2 shadow-[0_1px_0_0] shadow-orange-500"
     {...props}
   />
 );
+
 export const CodeTabsPanels = (
   props: React.ComponentProps<typeof RATabsPanels>,
 ) => <RATabsPanels className="" {...props} />;

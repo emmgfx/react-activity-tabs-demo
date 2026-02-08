@@ -8,7 +8,7 @@ export const Footer = () => {
         &copy; 2026{" "}
         <Link
           href="https://github.com/emmgfx/react-activity-tabs"
-          className="underline text-nowrap"
+          className="text-nowrap underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -17,7 +17,7 @@ export const Footer = () => {
         . Built by{" "}
         <Link
           href="https://www.viciana.me"
-          className="underline text-nowrap"
+          className="text-nowrap underline"
           target="_blank"
           rel="noopener noreferrer"
         >
