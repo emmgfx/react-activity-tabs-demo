@@ -13,6 +13,7 @@ import {
   CodeTabsTab,
 } from "@/components/CustomTabsCode";
 import { IconTSX } from "@/components/IconTSX";
+import { InstallationCommand } from "@/components/InstallationCommand";
 
 Code.theme = "github-dark";
 
@@ -20,7 +21,13 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <p className="text-lg font-semibold text-center">
+      <div className="h-8" />
+      <p className="text-center text-lg font-semibold">Installation</p>
+      <div className="h-8" />
+      <InstallationCommand />
+      <div className="h-px bg-slate-200" />
+      <div className="h-8" />
+      <p className="text-center text-lg font-semibold">
         Basic styling with Tailwind classes
       </p>
       <div className="h-8" />
