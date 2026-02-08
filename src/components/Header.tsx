@@ -7,17 +7,17 @@ export const Header = () => {
       <div>
         <Link
           href="/"
-          className="mx-auto flex w-fit items-center justify-center gap-2 text-center text-lg font-semibold capitalize md:text-2xl"
+          className="mx-auto flex w-fit items-center justify-center gap-1 text-center text-lg font-semibold capitalize md:text-2xl"
         >
-          <span className="rounded-t-2xl bg-slate-300 px-3 py-1 text-slate-700 md:px-6 md:py-2">
+          <span className="rounded-t-2xl rounded-b-sm bg-purple-100 px-3 pt-1.5 pb-1 text-purple-950 md:px-6 md:py-2">
             react
           </span>
           <span className="sr-only">-</span>
-          <span className="rounded-t-2xl bg-slate-300 px-3 py-1 text-slate-700 md:px-6 md:py-2">
+          <span className="rounded-t-2xl rounded-b-sm bg-purple-100 px-3 pt-1.5 pb-1 text-purple-950 md:px-6 md:py-2">
             activity
           </span>
           <span className="sr-only">-</span>
-          <span className="rounded-t-2xl bg-slate-600 px-3 py-1 text-slate-100 md:px-6 md:py-2">
+          <span className="rounded-t-2xl rounded-b-sm bg-purple-400 px-3 pt-1.5 pb-1 text-purple-950 md:px-6 md:py-2">
             tabs
           </span>
         </Link>

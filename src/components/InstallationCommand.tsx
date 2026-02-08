@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 const command = "npm i react-activity-tabs";
 
@@ -14,11 +15,14 @@ export const InstallationCommand = () => {
   };
 
   return (
-    <div className="relative mx-auto max-w-md rounded-full border border-white bg-slate-100 px-4 py-3 text-sm text-slate-700 ring-1 ring-slate-400 ring-offset-1">
-      <code>{command}</code>
+    <div className="relative mx-auto max-w-xs rounded-full bg-slate-600 px-4 py-3 text-sm">
+      <code className="text-white">{command}</code>
       <button
         onClick={copyToClipboard}
-        className="absolute top-1/2 right-1 -translate-y-1/2 rounded-full bg-blue-500 px-3 py-2 text-white disabled:bg-emerald-500"
+        className={twMerge(
+          "absolute top-1/2 right-1 -translate-y-1/2 rounded-full bg-purple-400 px-3 py-2 font-semibold text-purple-950 transition-all disabled:bg-emerald-300 disabled:text-emerald-950",
+          copied && "animate-rubber-band",
+        )}
         disabled={copied}
       >
         {copied ? "Copied!" : "Copy"}
