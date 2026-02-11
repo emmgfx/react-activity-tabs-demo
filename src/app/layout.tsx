@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "react-activity-tabs - %s",
   },
   description:
-    "React tabs component that doesn't loose your state, by using the Activity component",
+    "React tabs component that doesn't lose your state, by using the Activity component",
 };
 
 export default function RootLayout({

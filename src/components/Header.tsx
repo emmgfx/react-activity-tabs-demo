@@ -25,7 +25,7 @@ export const Header = () => {
       <div className="h-8 md:h-16" />
 
       <div className="text-center text-balance">
-        React tabs component that doesn't loose your state
+        React tabs component that doesn't lose your state
       </div>
       <div className="h-8 md:h-16" />
     </div>
